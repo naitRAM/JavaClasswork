@@ -1,4 +1,4 @@
-package ramimans.helloworld;
+package com.sg.ramimans.helloworld;
 
 /**
  *

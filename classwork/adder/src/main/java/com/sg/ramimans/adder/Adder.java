@@ -1,4 +1,4 @@
-package ramimans.adder;
+package com.sg.ramimans.adder;
 
 import java.util.Scanner;
 

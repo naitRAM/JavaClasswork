@@ -1,4 +1,4 @@
-package ramimans.windowmaster;
+package com.sg.ramimans.windowmaster;
 
 import java.util.Scanner;
 
