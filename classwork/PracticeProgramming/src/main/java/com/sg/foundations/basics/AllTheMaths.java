@@ -5,7 +5,7 @@ package com.sg.foundations.basics;
  * @author Rami Mansieh
  * email: rmansieh@gmail.com
  * data: May 27, 2021
- * purpose: 
+ * purpose: practice using binary and comparison operators
  */
 public class AllTheMaths {
     public static void main(String[] args) {
@@ -43,6 +43,6 @@ public class AllTheMaths {
         System.out.println(67 > 4 * 5);
         
         System.out.print("Is 78 less than 4 * 5? ");
-        System.out.print("???");
+        System.out.print(78 < 4 * 5);
     }
 }
