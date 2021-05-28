@@ -33,11 +33,11 @@ public class MenuOfChampions {
         
         //print out menu
         System.out.print("               ");
-        System.out.println( "$" + falafelPrice + priceDecorator + falafel);
+        System.out.println( "$" + String.format("%.2f", falafelPrice) + priceDecorator + falafel);
         System.out.print("               ");
-        System.out.println("$" + shawarmaPrice + priceDecorator + shawarma);
+        System.out.println("$" + String.format("%.2f", shawarmaPrice) + priceDecorator + shawarma);
         System.out.print("               ");
-        System.out.println("$" + fattoushPrice + priceDecorator + fattoush);
+        System.out.println("$" + String.format("%.2f", fattoushPrice) + priceDecorator + fattoush);
         
     }
 }
