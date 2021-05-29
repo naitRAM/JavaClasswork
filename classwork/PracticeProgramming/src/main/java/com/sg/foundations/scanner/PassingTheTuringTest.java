@@ -10,6 +10,7 @@ import java.util.Scanner;
  */
 public class PassingTheTuringTest {
     public static void main(String[] args) {
+        
         Scanner turingScanner = new Scanner(System.in);
         System.out.println("Hello friend!");
         System.out.println("What's your name?");
