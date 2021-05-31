@@ -13,10 +13,10 @@ import java.util.Random;
 public class GuessMeMore {
     public static void main(String[] args) {
         Random randomizer = new Random();
-        int myNum = randomizer.nextInt(200) - 100;
+        int myNum = randomizer.nextInt(201) - 100;
 
         Scanner inputScanner = new Scanner(System.in);
-        System.out.println("Can you guess the secret number? ");
+        System.out.println("Can you guess the number between -100 and 100? ");
         int userNum = inputScanner.nextInt();
         System.out.println("Your guess: " + userNum);
         
