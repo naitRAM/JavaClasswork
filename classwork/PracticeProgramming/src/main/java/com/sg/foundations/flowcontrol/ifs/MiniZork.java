@@ -5,7 +5,7 @@ import java.util.Scanner;
  * @author Rami Mansieh
  * email: rmansieh@gmail.com
  * data: May 30, 2021
- * purpose: 
+ * purpose: demonstration of nested if-else statements with a text-based game
  */
 public class MiniZork {
     public static void main(String[] args) {
