@@ -14,7 +14,7 @@ public class TraditionalFizzBuzz {
         int userNum = userInput.nextInt();
         int count = 0;
         System.out.println("");
-        for (int i = 0; count < userNum ; i++) {
+        for (int i = 0; count < userNum; i++) {
             if (i==0) {
                 System.out.println(i);
             } else if (i%3 == 0 && i%5 ==0) {
