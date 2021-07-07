@@ -8,6 +8,7 @@ package com.sg.ramimans.simplecalculator;
  * purpose: 
  */
 public class SimpleCalculator {
+    
     public static float add(float num1, float num2) {
         return num1 + num2;
     }
@@ -21,8 +22,7 @@ public class SimpleCalculator {
     }
     
     public static float divide(float num1, float num2) {
-       
         return num1/num2;
-        
     }
+    
 }

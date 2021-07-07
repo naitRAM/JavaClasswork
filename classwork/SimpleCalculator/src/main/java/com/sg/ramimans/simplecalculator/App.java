@@ -50,9 +50,7 @@ public class App {
                 case "e":
                     System.out.println("Thanks for using SimpleCalculator! Goodbye!");
                     calculating = false;
-                
             }   
-            
         } while (calculating);
     }
 }
