@@ -21,4 +21,8 @@ public class Square extends Shape{
     public float getPerimeter() {
         return this.side * 4;
     }
+    @Override
+    public String getColor() {
+        return this.color;
+    }
 }

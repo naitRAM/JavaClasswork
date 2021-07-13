@@ -1,0 +1,50 @@
+Alabama::Montgomery::199783::162
+Alaska::Juneau::32227::3255
+Arizona::Phoenix::1633000::517
+Arkansas::Little Rock::197958::123
+California::Sacramento::500930::994
+Colorado::Denver::705576::155
+Connecticut::Hartford::123088::18
+Delaware::Dover::37523::24
+Florida::Tallahassee::191279::103
+Georgia::Atlanta::488800::137
+Hawaii::Honolulu::348985::68
+Idaho::Boise::226115::85
+Illinois::Springfield::115888::67
+Indiana::Indianapolis::864447::368
+Iowa::Des Moines::215636::91
+Kansas::Topeka::126397::61
+Kentucky::Frankfort::27680::15
+Louisiana::Baton Rouge::224149::89
+Maine::Augusta::18605::58
+Maryland::Annapolis::39278::8
+Massachusetts::Boston::684379::90
+Michigan::Lansing::117159::37
+Minnesota::St. Paul::304547::56
+Mississippi::Jackson::166383::113
+Missouri::Jefferson City::42919::38
+Montana::Helena::32024::17
+Nebraska::Lincoln::283839::98
+Nevada::Carson City::54773::157
+New Hampshire::Concord::43244::67
+New Jersey::Trenton::83412::8
+New Mexico::Santa Fe::83922::52
+New York::Albany::97478::22
+North Carolina::Raleigh::464485::148
+North Dakota::Bismarck::72777::35
+Ohio::Columbus::878553::225
+Oklahoma::Oklahoma City::643692::621
+Oregon::Salem::169259::49
+Pennsylvania::Harrisburg::49209::12
+Rhode Island::Providence::179494::21
+South Carolina::Columbia::133273::140
+South Dakota::Pierre::13961::13
+Tennessee::Nashville::692587::526
+Texas::Austin::950807::272
+Utah::Salt Lake City::197756::111
+Vermont::Montpelier::7477::10
+Virginia::Richmond::226622::63
+Washington::Olympia::51534::20
+West Virginia::Charleston::48006::33
+Wisconsin::Madison::254977::102
+Wyoming::Cheyenne::63607::32

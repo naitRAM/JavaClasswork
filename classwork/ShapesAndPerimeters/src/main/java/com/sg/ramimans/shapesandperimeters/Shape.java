@@ -11,19 +11,11 @@ public abstract class Shape {
     
     protected String color;
     
-    public float getArea(){
-    float area = 0;
-    return area;
-    };
+    public abstract float getArea();
     
-    public float getPerimeter(){
-    float perimeter = 0;
-    return perimeter;
-    }
+    public abstract float getPerimeter();
     
-    public String getColor () {
-        return this.color;
-    }
+    public abstract String getColor();
     
 }
 

@@ -14,7 +14,7 @@ public class App {
         do {
             System.out.println("What operation would you like to perform? \n"
                     + "Enter 'a' to add, 's' to subtract, 'm' to multiply, 'd' to divide:\n"
-                    + "ENTER 'e' TO EXIT:");
+                    + "( ENTER 'e' TO EXIT )");
             String userResponse = userInput.nextLine();
             float num1;
             float num2;

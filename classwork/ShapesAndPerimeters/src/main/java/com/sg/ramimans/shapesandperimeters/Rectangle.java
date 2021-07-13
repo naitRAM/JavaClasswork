@@ -24,4 +24,9 @@ public class Rectangle extends Shape {
         return this.length * 2 + this.width * 2;
     }
     
+    @Override
+    public String getColor() {
+        return this.color;
+    }
+    
 }

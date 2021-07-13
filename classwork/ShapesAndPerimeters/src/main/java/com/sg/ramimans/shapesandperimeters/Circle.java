@@ -24,4 +24,9 @@ public class Circle extends Shape{
     public float getArea() {
         return (float)(Math.PI * Math.pow(radius, 2));
     }
+    
+    @Override
+    public String getColor () {
+        return this.color;
+    }
 }

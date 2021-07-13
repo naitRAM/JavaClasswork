@@ -32,4 +32,9 @@ public class Triangle extends Shape{
         return (float)Math.sqrt(semiperimeter * (semiperimeter - side1) * 
                 (semiperimeter - side2) * (semiperimeter - side3));
     }
+    
+    @Override
+    public String getColor() {
+        return this.color;
+    }
 }
