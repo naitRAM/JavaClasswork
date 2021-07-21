@@ -1,6 +1,11 @@
 package com.sg.ramimans.dvdlibrary.dvdlibrary;
 
 import com.sg.ramimans.dvdlibrary.controller.DVDLibraryController;
+import com.sg.ramimans.dvdlibrary.dao.DVDLibraryDao;
+import com.sg.ramimans.dvdlibrary.dao.DVDLibraryDaoFileImpl;
+import com.sg.ramimans.dvdlibrary.ui.DVDLibraryView;
+import com.sg.ramimans.dvdlibrary.ui.UserIO;
+import com.sg.ramimans.dvdlibrary.ui.UserIOConsoleImpl;
 
 /**
  *
@@ -12,7 +17,10 @@ import com.sg.ramimans.dvdlibrary.controller.DVDLibraryController;
 public class App {
     
     public static void main (String[] args) {
-        DVDLibraryController controller = new DVDLibraryController();
+        DVDLibraryDao dao = new DVDLibraryDaoFileImpl();
+        UserIO io = new UserIOConsoleImpl();
+        DVDLibraryView view = new DVDLibraryView(io);
+        DVDLibraryController controller = new DVDLibraryController(dao, view);
         controller.run();
     }
 }

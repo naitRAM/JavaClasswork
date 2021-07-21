@@ -12,14 +12,18 @@ import java.util.Set;
  */
 public interface DVDLibraryDao {
     
-    DVD addDVD(String title, DVD DVD);
+    DVD addDVD(String title, DVD DVD) throws DVDLibraryDaoException;
     
-    DVD getDVD(String title);
+    DVD getDVD(String title) throws DVDLibraryDaoException;
     
-    DVD removeDVD(String title);
+    DVD removeDVD(String title) throws DVDLibraryDaoException;
     
-    DVD editDVD(String title, DVD DVD);
+    DVD editDVD(String title, DVD DVD) throws DVDLibraryDaoException;
     
-    Set<String> getAllDVDTitles();
+    Set<String> getAllDVDTitles() throws DVDLibraryDaoException;
+    
+    boolean libraryHas(String title) throws DVDLibraryDaoException;
+    
+    boolean emptyLibrary() throws DVDLibraryDaoException;
     
 }
