@@ -7,7 +7,10 @@ import com.sg.ramimans.dvdlibrary.ui.DVDLibraryView;
 
 /**
  *
- * @author Rami Mansieh email: rmansieh@gmail.com data: Jul. 16, 2021 purpose:
+ * @author Rami Mansieh 
+ * email: rmansieh@gmail.com 
+ * date: Jul. 16, 2021 
+ * purpose: demonstrate MVC pattern, dependency injection, loose coupling
  */
 public class DVDLibraryController {
 
@@ -20,10 +23,12 @@ public class DVDLibraryController {
     }
 
     public void run() { 
+        // handle IO exceptions
         try {
             boolean keepUsing = true;
             while (keepUsing) {
                 view.displayMainMenu();
+                // get a number (1 - 7) corresponding to user's menu choice
                 int userChoice = view.getMainMenuChoice();
                 switch (userChoice) {
 
@@ -61,6 +66,7 @@ public class DVDLibraryController {
         }
     }
 
+    // append user's DVD to DVD collection if it doesn't already exist
     private void addDVD() throws DVDLibraryDaoException{
         
         String titleToAdd = view.getNewTitle();
@@ -73,6 +79,7 @@ public class DVDLibraryController {
         }
     }
 
+    // edit all DVD data, except for the title, of an existing DVD 
     private void editDVD() throws DVDLibraryDaoException{
         if (dao.emptyLibrary()) {
             view.displayEmptyLibrary();
@@ -91,6 +98,7 @@ public class DVDLibraryController {
         }
     }
 
+    // remove a DVD from DAO if it exists
     private void deleteDVD() throws DVDLibraryDaoException{
         if (dao.emptyLibrary()) {
             view.displayEmptyLibrary();
@@ -106,6 +114,7 @@ public class DVDLibraryController {
         }
     }
 
+    // check if a certain DVD title exists in the DAO
     private void searchForDVD() throws DVDLibraryDaoException {
         if (dao.emptyLibrary()) {
             view.displayEmptyLibrary();
@@ -119,6 +128,7 @@ public class DVDLibraryController {
         }
     }
 
+    // display field values of a certain DVD in the DAO
     private void displayDVDInfo() throws DVDLibraryDaoException {
         if (dao.emptyLibrary()) {
             view.displayEmptyLibrary();
@@ -132,7 +142,8 @@ public class DVDLibraryController {
             }
         }
     }
-
+    
+    // display the titles of all DVDs in the DAO
     private void displayAllTitles() throws DVDLibraryDaoException {
         if (dao.emptyLibrary()) {
             view.displayEmptyLibrary();

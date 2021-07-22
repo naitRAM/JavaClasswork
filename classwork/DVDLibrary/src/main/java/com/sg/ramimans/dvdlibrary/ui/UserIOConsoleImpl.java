@@ -26,6 +26,8 @@ public class UserIOConsoleImpl implements UserIO{
     }
     
     @Override
+    // guarantee user input to be an integer between min and max (inclusive),
+    // handles input mismatch and out-of-range issues
     public int promptValidInt(String message, int min, int max) {
         boolean isBadInput = true;
         int userInt = 0;

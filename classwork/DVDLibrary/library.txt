@@ -1,2 +1,2 @@
-Hello::2012::PG-13::Rami Malek::Malek Studios::Amazing
-Rami::2010::R::Rami Malek::Malek Studios::Excellent
+As Good As It Gets::1997::PG-13::James L. Brooks::TriStar Pictures::Hilarious
+The Shawshank Redemption::1994::R::Frank Darabont::Castlerock Entertainment::best movie ever

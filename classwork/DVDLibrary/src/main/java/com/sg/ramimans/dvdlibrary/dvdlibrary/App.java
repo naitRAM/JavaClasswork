@@ -12,7 +12,7 @@ import com.sg.ramimans.dvdlibrary.ui.UserIOConsoleImpl;
  * @author Rami Mansieh
  * email: rmansieh@gmail.com
  * data: Jul. 16, 2021
- * purpose: 
+ * purpose: demonstrate use of JAVA OOP concepts in an MVC application
  */
 public class App {
     

@@ -5,7 +5,10 @@ import java.util.Set;
 
 /**
  *
- * @author Rami Mansieh email: rmansieh@gmail.com data: Jul. 16, 2021 purpose:
+ * @author Rami Mansieh 
+ * email: rmansieh@gmail.com 
+ * data: Jul. 16, 2021 
+ * purpose: demonstrate understanding of MVC design
  */
 public class DVDLibraryView {
 
@@ -70,6 +73,7 @@ public class DVDLibraryView {
         return title;
     }
 
+    // format message prompt to include acceptable range of integer input
     private int getMenuChoiceNumber(String message, int min, int max) {
         message = String.format(message + " (%s - %s):", min, max);
         io.print("");
@@ -96,6 +100,7 @@ public class DVDLibraryView {
         return getDVDTitle(message);
     }
 
+    // create new DVD data transger object from user data
     public DVD getNewData(String title) {
         io.print("");
         String releaseDate = io.promptString("DVD release date:");
@@ -112,6 +117,7 @@ public class DVDLibraryView {
         return newDVD;
     }
 
+    // uses title collection to display numbered but unsorted DVD titles
     public void displayAllDVDTitles(Set<String> titleSet) {
         io.print("");
         io.print(titleSet.size() + " entries found");
@@ -124,6 +130,7 @@ public class DVDLibraryView {
         }
     }
 
+    // print out individual DVD's data
     public void displayDVD(DVD DVD) {
         io.print("");
         io.print("Title: " + DVD.getTitle());
@@ -153,6 +160,7 @@ public class DVDLibraryView {
         String message = title + " deleted from library";
     }
 
+    // intended for exception error messages
     public void displayErrorMessage(String errorMessage) {
         io.print("");
         io.print(errorMessage);
