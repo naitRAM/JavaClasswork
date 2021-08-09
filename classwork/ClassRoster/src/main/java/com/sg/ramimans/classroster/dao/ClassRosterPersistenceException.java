@@ -7,11 +7,11 @@ package com.sg.ramimans.classroster.dao;
  * data: Jul. 16, 2021
  * purpose: 
  */
-public class ClassRosterDaoException extends Exception {
-    public ClassRosterDaoException(String message) {
+public class ClassRosterPersistenceException extends Exception {
+    public ClassRosterPersistenceException(String message) {
         super(message);
     }
-    public ClassRosterDaoException(String message, Throwable cause) {
+    public ClassRosterPersistenceException(String message, Throwable cause) {
         super(message, cause);
     }
 }
