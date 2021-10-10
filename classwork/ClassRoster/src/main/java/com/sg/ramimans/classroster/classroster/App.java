@@ -9,6 +9,8 @@ import com.sg.ramimans.classroster.service.ClassRosterServiceLayerImpl;
 import com.sg.ramimans.classroster.ui.ClassRosterView;
 import com.sg.ramimans.classroster.ui.UserIO;
 import com.sg.ramimans.classroster.ui.UserIOConsoleImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -19,12 +21,17 @@ import com.sg.ramimans.classroster.ui.UserIOConsoleImpl;
  */
 public class App {
     public static void main(String[] args) {
+        /*
         UserIO myIO = new UserIOConsoleImpl();
         ClassRosterView myView = new ClassRosterView(myIO);
         classRosterDao myDao = new ClassRosterDaoFileImpl();
         ClassRosterAuditDao myAuditDao = new ClassRosterAuditDaoFileImpl();
         ClassRosterServiceLayer myService = new ClassRosterServiceLayerImpl(myDao, myAuditDao);
         ClassRosterController controller = new ClassRosterController(myService, myView);
+        controller.run();
+        */
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassRosterController controller = appContext.getBean("controller", ClassRosterController.class);
         controller.run();
     }
     

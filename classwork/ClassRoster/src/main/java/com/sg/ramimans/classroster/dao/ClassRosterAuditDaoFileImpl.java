@@ -22,7 +22,7 @@ public class ClassRosterAuditDaoFileImpl implements ClassRosterAuditDao{
         try {
             out = new PrintWriter(new FileWriter(AUDIT_FILE, true));
         } catch (IOException e) {
-            throw new ClassRosterPersistenceException("Could not perist audit information.", e);
+            throw new ClassRosterPersistenceException("Could not persist audit information.", e);
         }
         
         LocalDateTime timestamp = LocalDateTime.now();

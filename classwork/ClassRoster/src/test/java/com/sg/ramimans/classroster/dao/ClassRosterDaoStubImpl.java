@@ -1,4 +1,4 @@
-package com.sg.ramimans.classroster.service;
+package com.sg.ramimans.classroster.dao;
 
 import com.sg.ramimans.classroster.dao.ClassRosterPersistenceException;
 import com.sg.ramimans.classroster.dao.classRosterDao;

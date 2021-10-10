@@ -23,3 +23,4 @@ public interface ClassRosterServiceLayer {
     
     Student removeStudent(String studentId) throws ClassRosterPersistenceException;
 }
+ 

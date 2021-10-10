@@ -15,6 +15,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -25,10 +27,10 @@ public class ClassRosterServiceLayerImplTest {
     private ClassRosterServiceLayer service;
 
     public ClassRosterServiceLayerImplTest() {
-        classRosterDao dao = new ClassRosterDaoStubImpl();
-        ClassRosterAuditDao auditDao = new ClassRosterAuditDaoStubImpl();
-
-        service = new ClassRosterServiceLayerImpl(dao, auditDao);
+        //classRosterDao dao = new ClassRosterDaoStubImpl();
+        //ClassRosterAuditDao auditDao = new ClassRosterAuditDaoStubImpl();
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        service = appContext.getBean("serviceLayer", ClassRosterServiceLayer.class);
     }
 
     @Test
@@ -124,8 +126,8 @@ public class ClassRosterServiceLayerImplTest {
         assertNotNull(shouldBeAda, "Removing 001 should not be null.");
         assertEquals(testClone, shouldBeAda, "Student removed from 0001 should be Ada");
 
-        Student shouldBeNull = service.removeStudent("0042");
-        assertNull(shouldBeNull, "Removing 0042 should be null.");
+        Student shouldBeNull = service.getStudent("0042");    
+        assertNull( shouldBeNull, "Getting 0042 should be null.");
 
     }
 
